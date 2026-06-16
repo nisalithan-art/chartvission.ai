@@ -16,7 +16,7 @@ st.markdown("""
 st.title("ChartVision.ai")
 
 genai.configure(api_key="AQ.Ab8RN6IGQCk63S_YennYCERWbaM6ei0JUdp5cmjTSmA4fXOekA")
-model = genai.GenerativeModel('gemini-1.5-flash-latest')
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 uploaded_file = st.file_uploader("Upload chart image:", type=["jpg", "jpeg", "png"])
 
