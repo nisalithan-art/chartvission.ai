@@ -1,3 +1,3 @@
 streamlit
-google-genarativeai
+google-generativeai
 pillow
