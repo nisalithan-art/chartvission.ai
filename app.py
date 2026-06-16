@@ -20,7 +20,7 @@ st.markdown("<p style='text-align: center; color: gray;'>Automate Your Chart Ana
 
 api_key = st.secrets.get("GEMINI_API_KEY")
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
 uploaded_file = st.file_uploader("Choose Chart Image:", type=["jpg", "jpeg", "png"])
 
@@ -49,7 +49,7 @@ if uploaded_file:
                 data = json.loads(clean_text)
                 
                 st.success("Analysis Completed!")
-                st.json(data) # ප්‍රතිඵල පෙන්වනවා
+                st.json(data) 
                 
             except Exception as e:
                 st.error(f"Analysis Failed: {str(e)}")
